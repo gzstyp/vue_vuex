@@ -21,6 +21,7 @@ export default new Vuex.Store({
     },
     actions: {       // 异步,接口异步请求，Backend后端服务器请求数据
     },
+    //模块化
     modules: {
 
     }
