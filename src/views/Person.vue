@@ -49,7 +49,7 @@
             /*当Vuex里的方法和调用Vuex其它组件的方法名一样时，可以用函数辅助mapMutations来简化代码*/
             ...mapMutations(['yinlz']),
             infoSet : function(){
-                this.$store.dispatch('setInfo');//dispatch用于异步耗时处理
+                this.$store.dispatch('setInfo');//dispatch用于异步耗时处理,传递vuex的actions里的方法名即可
                 //调用的流程是组件页面 Person.vue的事件 infoSet() 调用方法infoSet通过 this.$store.dispatch('setInfo'); 而本方法,最终调用的是上面的mutations的yinlz()方法
             }
         }
