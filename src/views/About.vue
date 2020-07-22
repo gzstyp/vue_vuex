@@ -14,7 +14,7 @@
     },
     methods : {
       jisuanPlus : function(){
-        this.$store.commit('yinlz');//指定在Vuex模块内的方法名
+        this.$store.commit('yinlz',512);//指定在Vuex模块内的方法名及参数
       },
     }
   }

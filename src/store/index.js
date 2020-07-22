@@ -12,10 +12,11 @@ export default new Vuex.Store({
     },
     mutations: {     // mutations修改状态值的途径,它是同步的函数,仅用于同步的方法,若要异步的请在 actions 属性里添加!!!
         //名字随便取,把上面的state传进来
-        yinlz(state){
+        yinlz(state,payload){//第2个参数是调用者传的
+            console.info(payload);
             state.count++;
         },
-        setAgeValue(state, payload){//如果本Vuex的方法名和参数来改变值
+        setAgeValue(state,payload){//如果本Vuex的方法名和参数来改变值
             state.age = payload;
         }
     },

@@ -5,7 +5,7 @@
             <li>性别：{{$store.state.gender}}</li>
             <li>年龄：{{age}}</li>
             <li>count：{{count}}</li>
-            <li @click="yinlz">共享+</li>
+            <li @click="yinlz(1024)"><button style="padding:6px;cursor:pointer;">共享+方法名及参数已传参数 @click="yinlz()",使用的是...mapMutations(['yinlz'])处理</button></li>
         </ul>
         <!-- 未做更改的代码: <input type="text" v-model="age"> -->
         <!-- 有因为 v-model会丢失属性,,把set和get改成事件 -->
