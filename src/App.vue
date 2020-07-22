@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
+      <router-link to="/list">List模块化</router-link> |
       <router-link to="/person">Person</router-link>
     </div>
     <router-view/>
