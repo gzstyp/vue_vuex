@@ -1,4 +1,4 @@
-// 这个文件的结构和\src\store\index.js一致,只是少了modules的属性
+// 这个文件的结构和\src\store\index.js一致,只是少了modules的属性,提议:在模块化开发尽量不要使用相同的数据或方法名
 export default {
     namespaced : true,//需要注意这个命名空间,要是启用了命名空间的话，在调用同步方法this.$store.commit或异步方法this.$store.dispatch时要加 命名空间/方法名xxx,含方法及state属性
     /*数据值,本质上是和\src\store\index.js同一个state属性，所以用法和它一样,只是获值是 $store.state.list.xxx 或 this.$store.state.list.xxx,list是在src\store\index.js的modules挂载定义的!!!*/

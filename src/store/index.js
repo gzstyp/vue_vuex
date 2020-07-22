@@ -33,6 +33,6 @@ export default new Vuex.Store({
     },
     //模块化
     modules: {
-        list//名称一样,可以简写
+        list//名称一样,可以简写,提议:在模块化开发尽量不要使用相同的数据或方法名
     }
 });
