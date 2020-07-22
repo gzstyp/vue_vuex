@@ -21,6 +21,13 @@ export default new Vuex.Store({
         }
     },
     actions: {       // 异步,接口异步请求，Backend后端服务器请求数据
+        setInfo(content){//参数是调用的页面组件的上下文
+            //模拟异步耗时操作
+            setTimeout(()=>{
+                //调用的流程是组件页面 Person.vue的事件 infoSet() 调用方法infoSet通过 this.$store.dispatch('setInfo'); 而本方法,最终调用的是上面的mutations的yinlz()方法
+                content.commit('yinlz',2048);
+            },1000);
+        }
     },
     //模块化
     modules: {
